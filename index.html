@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Login</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -13,10 +15,23 @@
                 
             </div>
             <div id="formulario">
-                <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+                <h1>Login</h1><br>
+                <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta.</p>
+                <br>
+
                 <form action="login.php" method="post">
 
+                    <label for="iemail"><span class="material-icons">person</span></label>
+                    <input type="email" name="email" id="iemail" required >
+
+
+                    <label for="ipass"><span class="material-icons">key</span></label>
+                    <input type="password" name="pass" id="ipass" min="8">
+
+
+                    <input id="entrar" type="submit" value="Entrar">
+                    <input type="button" value="Esqueci a senha" id="esqueci">
+                    
                 </form>
             </div>
         </section>

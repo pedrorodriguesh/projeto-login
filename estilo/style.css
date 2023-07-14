@@ -38,6 +38,9 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.644);
+
+    transition: width .5s, height .5s;
+    transition-timing-function: ease;
  }
 
  section#login > div#imagem{
@@ -52,4 +55,56 @@
  section#login > div#formulario{
     display: block;
     padding: 10px;
+ }
+
+ div#formulario > h1{
+    text-align: center;
+    font-size: 1.5em;
+ }
+
+ div#formulario > p {
+    font-size: 0.8em;
+ }
+
+form{
+    margin: auto;
+}
+
+
+
+ #entrar{
+    width: 222px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #49a09d;
+    margin-bottom: 7px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.342);
+    font-weight: bold;
+
+ }
+
+ span.material-icons{
+    background-color: #5f2c82;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: white;
+    padding: 3px;
+ }
+
+ #esqueci{
+    width: 222px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #49a09d;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.342);
+    font-weight: bold;
+ }
+
+ #entrar:hover{
+    background-color: #86c7c5;
+ }
+
+ #esqueci:hover{
+    background-color:#86c7c5 ;
  }
